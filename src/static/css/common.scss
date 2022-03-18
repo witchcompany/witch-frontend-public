@@ -1,0 +1,160 @@
+@import './font.scss';
+@import './color.scss';
+@import './icons.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  &,*{
+    cursor:none;
+    @media (max-width:823px) {
+      cursor: default;
+    }
+  }
+  :hover{
+    cursor:none;
+
+    @media (max-width:823px) {
+      cursor: pointer;
+    }
+  }
+}
+.cursor{
+  z-index: 99999;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  position: fixed;
+  background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/icon/cursor%402.png') center no-repeat;
+  background-size: 40px;
+  transition:background .3s;
+
+  @media (max-width:823px) {
+    background: none;
+  }
+}
+
+.cursor.linkHovered{
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%) scale(1.25);
+  background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/icon/cursor_active%402.png') center no-repeat;
+  background-size: 40px;
+
+  @media (max-width:823px) {
+    background: none;
+  }
+}
+
+
+body {
+  background: #14142A;
+  color: #fff;
+  @include body1;
+  word-break: keep-all;
+}
+
+.textHide{
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color:$gray100;
+}
+
+ul, li {
+  list-style: none;
+}
+
+
+
+button{
+  border:none;
+}
+
+// ir
+.ir_pm {
+  display: block; 
+  overflow: hidden; 
+  font-size: 0; 
+  line-height: 0; 
+  text-indent: -9999px;
+}
+.ir_wa {
+  display: block; 
+  overflow: hidden; 
+  position: relative; 
+  z-index: -1;
+  width: 100%; height: 100%;
+  }
+.ir_so {
+  overflow: hidden; 
+  position: absolute;
+  width: 0; height: 0; 
+  line-height: 0; 
+  text-indent: -9999px;
+  }
+
+
+$mobile: 759px;
+$tablet: 760px;
+$desktop: 1040px;
+$desktop2: 1279px;
+
+
+@mixin mobile {
+  @media (max-width: #{$mobile - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin maxDesktop {
+  @media (max-width: #{$desktop2}) {
+    @content;
+  }
+}
+
+
+@mixin flexCont ($flex, $jstify, $align) {
+  display: $flex;
+  justify-content: $jstify;
+  align-items: $align;
+}
+
+.container{
+  width: 1140px;
+  margin: 0 auto;
+  
+  @media (max-width:1279px) {
+    width: 100%;
+    padding:0 70px;
+  }
+  @media (max-width:599px) {
+    width: 100%;
+    padding:0 24px;
+  }
+  
+}

@@ -1,0 +1,97 @@
+.witch_logo {
+  display: inline-block;
+  width: 141px;
+  height: 36px;
+  background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/icon/witch_logo%402.png')no-repeat left;
+  background-size: 141px;
+
+  @media (max-width:746px) {
+    width:70px;
+    height: 20px;
+    background-size: contain;
+  }
+
+  @media (max-width:599px) {
+    width:22.8px;
+    height:18px;
+    background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/icon/witch_logoM.png')no-repeat center;
+    background-size: cover;
+  }
+}
+
+.menu_arrow{
+  display: inline-block;
+  width: 4.75px;
+  height: 8px;
+  background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/icon/menu_arrow.png')no-repeat center;
+  background-size: cover;
+}
+
+.witch_icon {
+  display: inline-block;
+  width: 222px;
+  height: 162px;
+  background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/icon/Token_Symbol_M.png')no-repeat center;
+  background-size: cover;
+
+  @media (max-width:600px) {
+    width: 138px;
+    height: 100px;
+      background-size: cover;
+  }
+}
+
+.auction_icon {
+  display: inline-block;
+  width: 234px;
+  height: 152px;
+  background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/icon/auction_icon.png')no-repeat center;
+  background-size: cover;
+}
+
+
+.wcraft_icon {
+  display: inline-block;
+  width: 186px;
+  height: 128px;
+  background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/icon/craft_icon.png')no-repeat center;
+  background-size: cover;
+}
+
+.pie_img {
+  width:568px;
+  height:480px;
+  background:url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/img/pie_chart.svg') no-repeat center;
+  background-size: cover;
+
+  @media (max-width:750px) {
+    width: 100%;
+    background-size:contain;
+  }
+  @media (max-width:599px) {
+    width: 100%;
+    height: 390px;
+  }
+  @media (max-width:380px) {
+    width: 100%;
+    height: 225px;
+  }
+}
+
+.line_img{
+  width:746px;
+  height:300px;
+  background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/img/line_graph.png') no-repeat center;
+  background-size: cover;
+
+  @media (max-width:900px) {
+    width: 100%;
+    background-size:contain;
+  }
+  @media (max-width:600px) {
+    width: 100%;
+    background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/img/pie_Graph_600.png') no-repeat center;
+    background-size:contain;
+  }
+}
+

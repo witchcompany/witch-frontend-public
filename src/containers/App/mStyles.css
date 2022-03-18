@@ -1,0 +1,393 @@
+@media screen and (max-width: 799px)
+{
+    html, body {
+        height: 100%;
+        font-size:62.5%;
+        cursor: default;
+    }
+    body {
+        font-size: 1.6rem;
+    }
+    header {
+        position: fixed;
+        height: 4.5rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index :99;
+        background-color: #ffffff;
+    }
+    #header > .container > .row {
+        width: auto;
+        height: auto;
+        padding: 0.9rem !important;
+    }
+    #header hr, #header .container .row  {
+        margin: 0;
+    }
+    #header .btn-box, #header .btn-box img, #header .btn-box span, #header .btn-box button, footer .info {
+        display: none !important;
+    }
+    .logo-box {
+        height: 2.8rem;
+        top: 0.9rem;
+        left: 2.4rem !important;
+        padding: 0;
+
+    }
+    .logo-img-left {
+        width: 2.1rem;
+        height: 2.8rem;
+        border-radius: 0rem;
+    }
+    .logo-img-right {
+        width: 11.2rem;
+        height: 1.35rem;
+        top: 0.6rem;
+        left: 2.67rem;
+        border-radius: 0rem;
+    }
+    #home, #service {
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+    #home {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        min-height: 60rem;
+
+        background-position: center center;
+        background-image: url(https://witchwitch.s3.ap-northeast-2.amazonaws.com/images/bg_1.png);
+    }
+    #home .home-container {
+        position: absolute;
+        height: 25rem;
+        top: 15%;
+        z-index: 10;
+        left: 2rem;
+        right: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #home .top-text {
+        margin-bottom: 2rem;
+
+        font-family: Apple SD Gothic Neo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.6rem;
+
+        color: #5F31B4;
+    }
+    #home .logo-text-img {
+        margin-bottom: 3rem;
+    }
+    #home .logo-text-img > img {
+        width: 100%;
+    }
+    #home .btn-box {
+        min-width: 34rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    #home .btn-box .btn-pc {
+        display: none;
+    }
+    #home .btn-box .btn-mobile img {
+        width: 16.5rem;
+    }
+    #service {
+        background-position: bottom center;
+        background-image: url(https://witchwitch.s3.ap-northeast-2.amazonaws.com/images/bg_2.png);
+    }
+    #service > .service-container {
+        position: relative;
+        top: 1rem;
+        max-width: 26rem;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #service .text-area {
+        word-break: keep-all;
+        margin-bottom: 7rem;
+    }
+    #service .image-area {
+        position: absolute;
+        left: 50%;
+        top: 6rem;
+        margin-left: -9.75rem;
+    }
+    #service .image-area > img {
+        width: 19.5rem;
+        height: 36rem;
+        padding: 0;
+    }
+    .text-area > .title {
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        text-align: center;
+        letter-spacing: -0.025em;
+
+        color: #5F31B4;
+    }
+    .text-area .tabs {
+        padding: 38rem 0 2.4rem 0;
+    }
+    .text-area .tabs li:last-child a {
+        margin-right: 0;
+    }
+    .text-area .tabs hr {
+        background-color: #5F31B4 !important;
+        height: 0.2rem;
+        display: none;
+    }
+    .text-area .tabs .active hr {
+        display: block;
+    }
+    .text-area .tabs a {
+        height: 2.2rem;
+        float: left;
+        margin-right: 5rem;
+        padding: 0.5rem 0;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-align: center;
+
+        background-color: #fff !important;
+        color: #AE9AD2 !important;
+    }
+    #service .text-area .tabs .active {
+        height: 2.2rem;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-align: center;
+
+        background-color: #fff !important;
+        color: #5F31B4 !important;
+    }
+    #service .tab-content span {
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2rem;
+
+        color: #4F4F4F;
+    }
+    .bottom-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 1.2rem 0rem;
+        margin: 2rem 0 0;
+
+        font-family: SpoqaHanSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+
+        background: rgba(110, 69, 202, 0.84);
+        color: #FFFFFF;
+    }
+    #service .btn-box, #footer .btn-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #service .btn-mobile, #footer .btn-mobile {
+        display: flex;
+        align-items: center;
+    }
+    #service .btn-box .btn-mobile img, #footer .btn-box .btn-mobile img {
+        margin: 0 0.5rem;
+    }
+    .content-header {
+        width: 100%;
+        height: 2rem;
+        margin: 3rem 0;
+
+        display: flex;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        letter-spacing: -0.025em;
+
+        flex-shrink: 0;
+        color: #5F31B4;
+    }
+    .content:nth-child(1) .content-header div:nth-child(1) {
+        flex-shrink: 0;
+    }
+    .content:nth-child(2) .content-header div:nth-child(1) {
+        flex-shrink: 0;
+    }
+    .content:nth-child(3) .content-header div:nth-child(1) {
+        flex-shrink: 0;
+    }
+    .content .content-header div:nth-child(2) {
+        width: 100%;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .content .content-header div:nth-child(2) > hr {
+        margin: 1rem;
+    }
+    .content-body > div {
+        margin: 1.2rem 0 1.2rem 0;
+    }
+    .content-body .card-deck {
+        display: flex;
+        flex-direction: row;
+        width: 34.5rem;
+    }
+    #advisor .content {
+        max-width: 32.6rem;
+        margin: 2rem auto 0 auto;
+        padding: 0 2rem;
+    }
+    #advisor .content:last-child {
+        margin-bottom: 3.8rem;
+    }
+    #advisor .card-deck {
+        max-width: 30rem;
+    }
+    #advisor .card-deck .card:nth-child(1) {
+        margin: 0 3rem 6.8rem 0;
+    }
+    #advisor .card-deck .card:nth-child(2) {
+        margin: 0 0 6.8rem 0;
+    }
+    #advisor .content .card {
+        max-width: 13.5rem;
+        border: 0;
+    }
+    #advisor .card-deck .card .card-body {
+        padding: 1.25rem 0;
+    }
+    #advisor .card-deck .card-img-top {
+        max-width: 6.5rem;
+        height: 6.5rem;
+    }
+    #advisor .card-deck .card-title {
+        height: 1.4rem;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+
+        color: #333333;
+    }
+    #advisor .card-deck .card-text {
+        max-width: 14rem;
+
+        font-family: SpoqaHanSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.1rem;
+        line-height: 2.4rem;
+
+        color: #333333;
+    }
+    #advisor .content-body .row {
+        align-items: center;
+    }
+    #advisor .content-img {
+        max-width: 10.1rem;
+
+        border: 1px solid #E8E8E8;
+        box-sizing: border-box
+    }
+    #advisor .content-text {
+        width: 100%;
+        max-width: 14rem;
+        margin: 1.4rem;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+
+        color: #333333
+    }
+    #footer {
+        background: #3D394D;
+        position: relative;
+
+        font-family: Apple SD Gothic Neo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+
+        color: #FFFFFF;
+    }
+    #footer .row {
+        max-width: 100%;
+        width: 60%;
+        padding: 3rem 3.4rem 2.2rem 3.4rem;
+        margin: 0;
+    }
+    #footer hr {
+        display: none;
+    }
+    #footer .policy p, footer .policy a {
+        font-family: Apple SD Gothic Neo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        margin: 2rem 1.2rem;
+
+        color: #FFFFFF;
+    }
+}
+@media screen and (max-width: 340px)
+{
+    #home .btn-box {
+        min-width: 32rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    #home .btn-box .btn-mobile img {
+        width: 15.5rem;
+    }
+    #service .btn-box .btn-mobile img, #footer .btn-box .btn-mobile img {
+        margin: 0 0.2rem;
+    }
+}
+@media screen and (min-width: 500px)
+{
+    #service .text-area {
+        word-break: keep-all;
+        margin-bottom: 10rem;
+    }
+}

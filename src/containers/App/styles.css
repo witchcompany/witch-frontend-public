@@ -1,0 +1,361 @@
+@media screen and (min-width: 800px)
+{
+    html, body {
+        height: 100%;
+        font-size:62.5%;
+        cursor: default;
+    }
+    body {
+        font-size: 1.6rem;
+    }
+
+    header {
+        position: fixed;
+        height: 7.4rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index :99999;
+        background-color: #ffffff;
+    }
+    #header > .container > div {
+        width: auto;
+        height: 7.4rem;
+        margin: 0rem 4rem;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header hr {
+        margin: 0;
+    }
+    .logo-img-left {
+        height: 4.1rem;
+        width: 3.1rem;
+        left: 0rem;
+        top: 0rem;
+        border-radius: 0rem;
+    }
+    .logo-img-right {
+        height: 2rem;
+        width: 16.5rem;
+        left: 4rem;
+        top: 1rem;
+        border-radius: 0rem;
+    }
+    #home, #service {
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    #home {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        min-height: 50rem;
+        background-image: url(https://witchwitch.s3.ap-northeast-2.amazonaws.com/images/bg_1.png);
+    }
+    #header .btn-box {
+        width: 32rem;
+        height: 4rem;
+        top: 1.5rem;
+        padding: 0rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-box .btn-pc {
+        margin: 0 1rem;
+    }
+    .btn-box .btn-mobile {
+        display: none;
+    }
+    #home .home-container {
+        position: absolute;
+        height: 35rem;
+        top: 15%;
+        z-index: 10;
+        left: 4rem;
+        right: 4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #home .top-text {
+        width: 42rem;
+        margin-bottom: 3rem;
+
+        font-family: Apple SD Gothic Neo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+
+        text-align: center;
+        color: #5F31B4;
+    }
+    #home .logo-text-img {
+        width: 50rem;
+        margin-bottom: 5rem;
+    }
+    #service {
+        height: 100rem;
+        background-image: url(https://witchwitch.s3.ap-northeast-2.amazonaws.com/images/bg_2.png);
+    }
+    #service > .service-container {
+        position: relative;
+        margin-top: 10rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #service .text-area {
+        float: right;
+        margin-left: 5rem;
+        color: #20232b;
+        word-break: keep-all;
+    }
+    #service .image-area > img {
+        width: 38rem;
+        height: 70rem;
+    }
+    #service .bottom-fixed {
+        display: none;
+    }
+    #service .btn-mobile {
+        display: none;
+    }
+    .text-area > .title {
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.8rem;
+        line-height: 7rem;
+        letter-spacing: -0.025em;
+
+        color: #5F31B4;
+    }
+    .text-area .tabs {
+        margin: 3rem 0 1.5rem 0;
+    }
+    .text-area .tabs hr {
+        background-color: #5F31B4 !important;
+        height: 0.2rem;
+        display: none;
+    }
+    .text-area .tabs .active hr {
+        display: block;
+    }
+    .text-area .tabs a {
+        padding: 0;
+        margin-right: 2rem;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+
+        background-color: #fff !important;
+        color: #AE9AD2 !important;
+    }
+    .text-area .tabs .active {
+        margin-right: 2rem;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+
+        background-color: #fff !important;
+        color: #5F31B4 !important;
+    }
+    #service .text-area .tab-content .active {
+        max-width: 44rem;
+        min-height: 10.5rem;
+        margin-top: 2rem;
+    }
+    #service .tab-content span{
+        height: 7.2rem;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+
+        color: #4F4F4F;
+    }
+    .content-header {
+        width: 100%;
+        height: 7.1rem;
+        margin: 5rem 0;
+
+        display: flex;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.8rem;
+        line-height: 7rem;
+        letter-spacing: -0.025em;
+        color: #5F31B4;
+    }
+    .content:nth-child(1) .content-header div:first-child {
+        flex-shrink: 0;
+    }
+    .content:nth-child(2) .content-header div:first-child {
+        flex-shrink: 0;
+    }
+    .content:nth-child(3) .content-header div:first-child {
+        flex-shrink: 0;
+    }
+    .content .content-header div:nth-child(2) {
+        width: 100%;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .content .content-header div:nth-child(2) > hr {
+        margin: 3.2rem;
+    }
+    #advisor .content {
+        max-width: 80rem;
+        margin: 5rem auto 0 auto;
+        padding: 0 2rem;
+    }
+    #advisor .content:nth-child(3) {
+        margin-bottom: 3.8rem;
+    }
+    #advisor .card-deck {
+        margin: 0;
+    }
+    #advisor .card-deck .card:nth-child(1) {
+        margin: 0 5rem 6.8rem 0;
+    }
+    #advisor .card-deck .card:nth-child(2) {
+        margin: 0 0 6.8rem 0;
+    }
+    #advisor .card-deck .card {
+        border: 0;
+    }
+    #advisor .card-deck .card .card-body {
+        padding: 1.25rem 0;
+    }
+    #advisor .card-deck .card-img-top {
+        width: 13.4rem;
+        height: 13.4rem;
+    }
+    #advisor .card-deck .card-title {
+        height: 2.8rem;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.9rem;
+
+        color: #333333;
+    }
+    #advisor .card-deck .card-text {
+        max-width: 28.5rem;
+        min-width: 27rem;
+        height: 9rem;
+
+        font-family: SpoqaHanSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+
+        color: #333333;
+    }
+    #advisor .content-body .row {
+        align-items: center;
+    }
+    #advisor .content-img {
+        max-width: 26rem;
+        margin: 2.5rem;
+
+        border: 1px solid #E8E8E8;
+        box-sizing: border-box
+    }
+    #advisor .content-text {
+        margin: 2rem;
+        max-width: 37rem;
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.9rem;
+
+        color: #333333
+    }
+    #footer {
+        height: 35rem;
+        background: #3D394D;
+        position: relative;
+
+        font-family: Apple SD Gothic Neo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+
+        color: #FFFFFF;
+    }
+    #footer .row {
+        max-width: 100%;
+        padding: 5rem 12.8rem 15rem 12.8rem;
+    }
+    #footer .policy {
+        margin: 0 5rem;
+    }
+    #footer .policy p, footer .policy a {
+        font-family: Apple SD Gothic Neo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        margin: 0.8rem;
+
+        color: #FFFFFF;
+    }
+    #footer hr {
+        background-color: white;
+        width:100%;
+    }
+    #footer .info {
+        width: 100%;
+        padding: 2rem 12.4rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    #footer .capyright {
+        font-family: Objective;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10rem;
+        line-height: 1.1rem;
+
+        color: #FFFFFF;
+    }
+    .bottom-content {
+        display: none;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 815px)
+{
+    .text-area .tabs {
+        min-width: 39.5rem;
+        margin: 3rem 0 1.5rem 0;
+    }
+}

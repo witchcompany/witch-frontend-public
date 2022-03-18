@@ -1,0 +1,186 @@
+@import '../static/css/common.scss';
+
+.NavBg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 96px;
+  padding:0 70px;
+  z-index: 9999;
+}
+.active{
+  visibility: visible;
+  transition: all 0.5s;
+}
+.hidden{
+  visibility: hidden;
+  transition: all 0.5s;
+  transform: translateY(-100%);
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+.navbar_logo{
+  display: block;
+  width: 141px;
+  height: 36px;
+
+  @media (max-width:746px) {
+    width:70px;
+    height: 18px;
+  }
+  @media (max-width:599px) {
+    width: 22.8px;
+    height: 18px;
+  }
+}
+
+.nav_menu {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: flex-end;
+  height: 96px;
+  line-height: 96px;
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  
+  a{
+    display: block;
+  }
+}
+.nav_item_drop{
+  position:relative;
+
+  &:after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    background: url('https://witch-brand.s3.ap-northeast-2.amazonaws.com/icon/menu_arrow.png')no-repeat center;
+    // background-size: cover;
+  }
+}
+.nav_links {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+
+  &:hover {
+    background: linear-gradient(74.69deg, #4EFFF4 24.97%, #3ED1FF 48.71%, #9874FF 74.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.2s ease-out;
+  }
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav_links_mobile {
+  display: none;
+}
+
+.menu_icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 746px) {
+  .NavBg{
+    height:48px;
+    padding:0 20px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:auto;
+    position: absolute;
+    top:48px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav_menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav_links {
+    display: block;
+    text-align: right;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .nav_links:hover {
+    background-color: #1888ff;
+    border-radius: 0;
+  }
+
+  .nav_item {
+    height: 48px;
+  }
+  .menu_icon {
+    display: block;
+    padding:0.5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav_links_mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #1888ff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 99999;
+  }
+
+  .nav_links_mobile:hover {
+    background: #fff;
+    color: #1888ff;
+    transition: 250ms;
+  }
+
+  // button {
+  //   display: none;
+  // }
+}

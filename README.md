@@ -1,2 +1,2 @@
 # witch-frontend-public
-public witchwitch web
+witch-frontend-public

@@ -1,0 +1,161 @@
+@import url("https://use.typekit.net/eju8woh.css");
+
+@mixin GibsonThin {
+  font-family: 'canada-type-gibson','sans-serif';
+  font-weight: 100;
+  font-style: normal;
+}
+
+@mixin GibsonBook {
+  font-family: 'canada-type-gibson','sans-serif';
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin GibsonRe {
+  font-family: 'canada-type-gibson','sans-serif';
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin GibsonMedi{
+  font-family: 'canada-type-gibson',sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin GibsonSemiB {
+  font-family: 'canada-type-gibson','sans-serif';
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin GibsonBo {
+  font-family: 'canada-type-gibson','sans-serif';
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+
+// font: font-style font-variant font-weight font-size/line-height font-family
+
+@mixin body1 {
+  font: normal 400 16px/26px 'canada-type-gibson','sans-serif';
+  letter-spacing: -0.4px;
+}
+
+@mixin body2 {
+  font: normal 400 18px/28px 'canada-type-gibson','sans-serif';
+  letter-spacing: -0.4px;
+}
+@mixin body3 {
+  font: normal 400 30px/44px 'canada-type-gibson','sans-serif';
+}
+@mixin body4 {
+  font: normal 400 36px/42px 'canada-type-gibson','sans-serif';
+}
+@mixin body5 {
+  font: normal 400 18px/24px 'canada-type-gibson','sans-serif';
+}
+@mixin body6 {
+  font: normal 400 12px/1 'canada-type-gibson','sans-serif';
+}
+@mixin body7 {
+  font: normal 400 14px/20px 'canada-type-gibson','sans-serif';
+}
+@mixin body8 {
+  font: normal 400 24px/36px 'canada-type-gibson','sans-serif';
+}
+@mixin body9 {
+  font: normal 400 26px/36px 'canada-type-gibson','sans-serif';
+}
+
+
+@mixin title1 {
+  font: normal 400 54px/62px 'canada-type-gibson','sans-serif';
+  letter-spacing: -0.3px;
+}
+@mixin title2 {
+  font: normal 600 24px/66px 'canada-type-gibson','sans-serif';
+  letter-spacing: -0.4px;
+}
+@mixin title3 {
+  font: normal 600 65px/83px 'canada-type-gibson','sans-serif';
+}
+@mixin title4 {
+  font: normal 600 50px/66px 'canada-type-gibson','sans-serif';
+}
+@mixin title5 {
+  font: normal 600 18px/32px 'canada-type-gibson','sans-serif';
+}
+@mixin title6 {
+  font: normal 600 22px/32px 'canada-type-gibson','sans-serif';
+}
+@mixin title7 {
+  font: normal 600 34px/38px 'canada-type-gibson','sans-serif';
+}
+@mixin title8 {
+  font: normal 600 36px/1 'canada-type-gibson','sans-serif';
+}
+@mixin title9 {
+  font: normal 600 36px/75px 'canada-type-gibson','sans-serif';
+}
+
+
+@mixin subTitle1 {
+  font: normal 400 36px/46px 'canada-type-gibson','sans-serif';
+  letter-spacing: -0.4px;
+}
+@mixin subTitle2 {
+  font: normal 400 24px/36px 'canada-type-gibson','sans-serif';
+  letter-spacing: -0.4px;
+}
+@mixin subTitle3 {
+  font: normal 600 18px/32px 'canada-type-gibson','sans-serif';
+}
+@mixin subTitle4 {
+  font: normal 400 38px/42px 'canada-type-gibson','sans-serif';
+}
+@mixin subTitle5 {
+  font: normal 400 22px/26px 'canada-type-gibson','sans-serif';
+}
+@mixin subTitle6 {
+  font: normal 400 20px/26px 'canada-type-gibson','sans-serif';
+}
+@mixin subTitle7 {
+  font: normal 400 20px/28px 'canada-type-gibson','sans-serif';
+}
+@mixin subTitle8 {
+  font: normal 400 18px/26px 'canada-type-gibson','sans-serif';
+}
+@mixin subTitle9 {
+  font: normal 400 36px/48px 'canada-type-gibson','sans-serif';
+}
+@mixin subTitle10 {
+  font: normal 400 16px/24px 'canada-type-gibson','sans-serif';
+}
+@mixin subTitle11 {
+  font: normal 400 34px/40px 'canada-type-gibson','sans-serif';
+}
+
+
+
+.title {
+  @include title1;
+}
+.title2 {
+  @include title2;
+}
+// .subTitle {
+//   @include subTitle1;
+// }
+.subTitle2 {
+  @include subTitle2;
+}
+.subTitle3 {
+  @include subTitle3;
+}
+.body2 {
+  @include body2;
+}
